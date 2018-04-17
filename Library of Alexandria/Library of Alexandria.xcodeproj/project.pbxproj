@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BCB456A2053CD910074D999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB45692053CD910074D999 /* AppDelegate.swift */; };
+		3BCB456C2053CD910074D999 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB456B2053CD910074D999 /* ViewController.swift */; };
+		3BCB456F2053CD910074D999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCB456D2053CD910074D999 /* Main.storyboard */; };
+		3BCB45712053CD910074D999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCB45702053CD910074D999 /* Assets.xcassets */; };
+		3BCB45742053CD910074D999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCB45722053CD910074D999 /* LaunchScreen.storyboard */; };
+		3BCB457F2053CD910074D999 /* Library_of_AlexandriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB457E2053CD910074D999 /* Library_of_AlexandriaTests.swift */; };
+		3BCB458A2053CD910074D999 /* Library_of_AlexandriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB45892053CD910074D999 /* Library_of_AlexandriaUITests.swift */; };
+		3BCB45982053CEA30074D999 /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB45972053CEA30074D999 /* AddBookViewController.swift */; };
+		3BCF6E9C2075EDD000C9E1A7 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6E9B2075EDD000C9E1A7 /* SearchTableViewController.swift */; };
+		3BCF6E9E2075EFE100C9E1A7 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6E9D2075EFE100C9E1A7 /* BookTableViewCell.swift */; };
+		3BCF6EA02075F83C00C9E1A7 /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6E9F2075F83C00C9E1A7 /* BookDetailsViewController.swift */; };
+		3BCF6EE02076DDEB00C9E1A7 /* Library of Alexandria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6EDE2076DDEB00C9E1A7 /* Library of Alexandria.xcdatamodeld */; };
+		3BCF6EE32076E23700C9E1A7 /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6EE12076E23700C9E1A7 /* Book+CoreDataClass.swift */; };
+		3BCF6EE42076E23700C9E1A7 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6EE22076E23700C9E1A7 /* Book+CoreDataProperties.swift */; };
+		3BCF6EE72077044C00C9E1A7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCF6EE62077044C00C9E1A7 /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BCB457B2053CD910074D999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BCB455E2053CD910074D999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BCB45652053CD910074D999;
+			remoteInfo = "Library of Alexandria";
+		};
+		3BCB45862053CD910074D999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BCB455E2053CD910074D999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BCB45652053CD910074D999;
+			remoteInfo = "Library of Alexandria";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BCB45662053CD910074D999 /* Library of Alexandria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Library of Alexandria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCB45692053CD910074D999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BCB456B2053CD910074D999 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BCB456E2053CD910074D999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BCB45702053CD910074D999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BCB45732053CD910074D999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BCB45752053CD910074D999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCB457A2053CD910074D999 /* Library of AlexandriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Library of AlexandriaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCB457E2053CD910074D999 /* Library_of_AlexandriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library_of_AlexandriaTests.swift; sourceTree = "<group>"; };
+		3BCB45802053CD910074D999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCB45852053CD910074D999 /* Library of AlexandriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Library of AlexandriaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCB45892053CD910074D999 /* Library_of_AlexandriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library_of_AlexandriaUITests.swift; sourceTree = "<group>"; };
+		3BCB458B2053CD910074D999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCB45972053CEA30074D999 /* AddBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookViewController.swift; sourceTree = "<group>"; };
+		3BCF6E9B2075EDD000C9E1A7 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		3BCF6E9D2075EFE100C9E1A7 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		3BCF6E9F2075F83C00C9E1A7 /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
+		3BCF6EDF2076DDEB00C9E1A7 /* Library of Alexandria.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Library of Alexandria.xcdatamodel"; sourceTree = "<group>"; };
+		3BCF6EE12076E23700C9E1A7 /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3BCF6EE22076E23700C9E1A7 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3BCF6EE62077044C00C9E1A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BCB45632053CD910074D999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCF6EE72077044C00C9E1A7 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCB45772053CD910074D999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCB45822053CD910074D999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B89F1C82084C49F0077850C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BCF6E9B2075EDD000C9E1A7 /* SearchTableViewController.swift */,
+				3BCF6E9F2075F83C00C9E1A7 /* BookDetailsViewController.swift */,
+				3BCB45972053CEA30074D999 /* AddBookViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		3B89F1C92084C4B40077850C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3BCF6E9D2075EFE100C9E1A7 /* BookTableViewCell.swift */,
+				3BCF6EE12076E23700C9E1A7 /* Book+CoreDataClass.swift */,
+				3BCF6EE22076E23700C9E1A7 /* Book+CoreDataProperties.swift */,
+				3BCF6EDE2076DDEB00C9E1A7 /* Library of Alexandria.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3BCB455D2053CD910074D999 = {
+			isa = PBXGroup;
+			children = (
+				3BCB45682053CD910074D999 /* Library of Alexandria */,
+				3BCB457D2053CD910074D999 /* Library of AlexandriaTests */,
+				3BCB45882053CD910074D999 /* Library of AlexandriaUITests */,
+				3BCB45672053CD910074D999 /* Products */,
+				3BCF6EE52077044B00C9E1A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3BCB45672053CD910074D999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BCB45662053CD910074D999 /* Library of Alexandria.app */,
+				3BCB457A2053CD910074D999 /* Library of AlexandriaTests.xctest */,
+				3BCB45852053CD910074D999 /* Library of AlexandriaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BCB45682053CD910074D999 /* Library of Alexandria */ = {
+			isa = PBXGroup;
+			children = (
+				3B89F1C92084C4B40077850C /* Data */,
+				3B89F1C82084C49F0077850C /* View Controller */,
+				3BCB45692053CD910074D999 /* AppDelegate.swift */,
+				3BCB456B2053CD910074D999 /* ViewController.swift */,
+				3BCB456D2053CD910074D999 /* Main.storyboard */,
+				3BCB45702053CD910074D999 /* Assets.xcassets */,
+				3BCB45722053CD910074D999 /* LaunchScreen.storyboard */,
+				3BCB45752053CD910074D999 /* Info.plist */,
+			);
+			path = "Library of Alexandria";
+			sourceTree = "<group>";
+		};
+		3BCB457D2053CD910074D999 /* Library of AlexandriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BCB457E2053CD910074D999 /* Library_of_AlexandriaTests.swift */,
+				3BCB45802053CD910074D999 /* Info.plist */,
+			);
+			path = "Library of AlexandriaTests";
+			sourceTree = "<group>";
+		};
+		3BCB45882053CD910074D999 /* Library of AlexandriaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3BCB45892053CD910074D999 /* Library_of_AlexandriaUITests.swift */,
+				3BCB458B2053CD910074D999 /* Info.plist */,
+			);
+			path = "Library of AlexandriaUITests";
+			sourceTree = "<group>";
+		};
+		3BCF6EE52077044B00C9E1A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BCF6EE62077044C00C9E1A7 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BCB45652053CD910074D999 /* Library of Alexandria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCB458E2053CD910074D999 /* Build configuration list for PBXNativeTarget "Library of Alexandria" */;
+			buildPhases = (
+				3BCB45622053CD910074D999 /* Sources */,
+				3BCB45632053CD910074D999 /* Frameworks */,
+				3BCB45642053CD910074D999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Library of Alexandria";
+			productName = "Library of Alexandria";
+			productReference = 3BCB45662053CD910074D999 /* Library of Alexandria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BCB45792053CD910074D999 /* Library of AlexandriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCB45912053CD910074D999 /* Build configuration list for PBXNativeTarget "Library of AlexandriaTests" */;
+			buildPhases = (
+				3BCB45762053CD910074D999 /* Sources */,
+				3BCB45772053CD910074D999 /* Frameworks */,
+				3BCB45782053CD910074D999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BCB457C2053CD910074D999 /* PBXTargetDependency */,
+			);
+			name = "Library of AlexandriaTests";
+			productName = "Library of AlexandriaTests";
+			productReference = 3BCB457A2053CD910074D999 /* Library of AlexandriaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BCB45842053CD910074D999 /* Library of AlexandriaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCB45942053CD910074D999 /* Build configuration list for PBXNativeTarget "Library of AlexandriaUITests" */;
+			buildPhases = (
+				3BCB45812053CD910074D999 /* Sources */,
+				3BCB45822053CD910074D999 /* Frameworks */,
+				3BCB45832053CD910074D999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BCB45872053CD910074D999 /* PBXTargetDependency */,
+			);
+			name = "Library of AlexandriaUITests";
+			productName = "Library of AlexandriaUITests";
+			productReference = 3BCB45852053CD910074D999 /* Library of AlexandriaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BCB455E2053CD910074D999 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Hsin-Ping Lin";
+				TargetAttributes = {
+					3BCB45652053CD910074D999 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					3BCB45792053CD910074D999 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3BCB45652053CD910074D999;
+					};
+					3BCB45842053CD910074D999 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3BCB45652053CD910074D999;
+					};
+				};
+			};
+			buildConfigurationList = 3BCB45612053CD910074D999 /* Build configuration list for PBXProject "Library of Alexandria" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BCB455D2053CD910074D999;
+			productRefGroup = 3BCB45672053CD910074D999 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BCB45652053CD910074D999 /* Library of Alexandria */,
+				3BCB45792053CD910074D999 /* Library of AlexandriaTests */,
+				3BCB45842053CD910074D999 /* Library of AlexandriaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BCB45642053CD910074D999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCB45742053CD910074D999 /* LaunchScreen.storyboard in Resources */,
+				3BCB45712053CD910074D999 /* Assets.xcassets in Resources */,
+				3BCB456F2053CD910074D999 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCB45782053CD910074D999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCB45832053CD910074D999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BCB45622053CD910074D999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCF6EE32076E23700C9E1A7 /* Book+CoreDataClass.swift in Sources */,
+				3BCF6EE02076DDEB00C9E1A7 /* Library of Alexandria.xcdatamodeld in Sources */,
+				3BCB45982053CEA30074D999 /* AddBookViewController.swift in Sources */,
+				3BCF6E9C2075EDD000C9E1A7 /* SearchTableViewController.swift in Sources */,
+				3BCB456C2053CD910074D999 /* ViewController.swift in Sources */,
+				3BCF6E9E2075EFE100C9E1A7 /* BookTableViewCell.swift in Sources */,
+				3BCB456A2053CD910074D999 /* AppDelegate.swift in Sources */,
+				3BCF6EE42076E23700C9E1A7 /* Book+CoreDataProperties.swift in Sources */,
+				3BCF6EA02075F83C00C9E1A7 /* BookDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCB45762053CD910074D999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCB457F2053CD910074D999 /* Library_of_AlexandriaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCB45812053CD910074D999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCB458A2053CD910074D999 /* Library_of_AlexandriaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BCB457C2053CD910074D999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BCB45652053CD910074D999 /* Library of Alexandria */;
+			targetProxy = 3BCB457B2053CD910074D999 /* PBXContainerItemProxy */;
+		};
+		3BCB45872053CD910074D999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BCB45652053CD910074D999 /* Library of Alexandria */;
+			targetProxy = 3BCB45862053CD910074D999 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BCB456D2053CD910074D999 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCB456E2053CD910074D999 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BCB45722053CD910074D999 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCB45732053CD910074D999 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BCB458C2053CD910074D999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BCB458D2053CD910074D999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BCB458F2053CD910074D999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Library of Alexandria/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "moansh.Library-of-Alexandria";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BCB45902053CD910074D999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Library of Alexandria/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "moansh.Library-of-Alexandria";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BCB45922053CD910074D999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Library of AlexandriaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "moansh.Library-of-AlexandriaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Library of Alexandria.app/Library of Alexandria";
+			};
+			name = Debug;
+		};
+		3BCB45932053CD910074D999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Library of AlexandriaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "moansh.Library-of-AlexandriaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Library of Alexandria.app/Library of Alexandria";
+			};
+			name = Release;
+		};
+		3BCB45952053CD910074D999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Library of AlexandriaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "moansh.Library-of-AlexandriaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Library of Alexandria";
+			};
+			name = Debug;
+		};
+		3BCB45962053CD910074D999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Library of AlexandriaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "moansh.Library-of-AlexandriaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Library of Alexandria";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BCB45612053CD910074D999 /* Build configuration list for PBXProject "Library of Alexandria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCB458C2053CD910074D999 /* Debug */,
+				3BCB458D2053CD910074D999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BCB458E2053CD910074D999 /* Build configuration list for PBXNativeTarget "Library of Alexandria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCB458F2053CD910074D999 /* Debug */,
+				3BCB45902053CD910074D999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BCB45912053CD910074D999 /* Build configuration list for PBXNativeTarget "Library of AlexandriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCB45922053CD910074D999 /* Debug */,
+				3BCB45932053CD910074D999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BCB45942053CD910074D999 /* Build configuration list for PBXNativeTarget "Library of AlexandriaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCB45952053CD910074D999 /* Debug */,
+				3BCB45962053CD910074D999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3BCF6EDE2076DDEB00C9E1A7 /* Library of Alexandria.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3BCF6EDF2076DDEB00C9E1A7 /* Library of Alexandria.xcdatamodel */,
+			);
+			currentVersion = 3BCF6EDF2076DDEB00C9E1A7 /* Library of Alexandria.xcdatamodel */;
+			path = "Library of Alexandria.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3BCB455E2053CD910074D999 /* Project object */;
+}
