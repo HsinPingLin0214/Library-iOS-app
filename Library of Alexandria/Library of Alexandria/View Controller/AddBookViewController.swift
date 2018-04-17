@@ -37,8 +37,6 @@ class AddBookViewController: UIViewController {
     }
     
     @IBAction func createBook(_ sender: Any) {
-        var messageString: String = "Book save."
-        
         if inputName.text != "" && inputISBN.text != ""
         {
             
@@ -57,12 +55,12 @@ class AddBookViewController: UIViewController {
             
             book.name = name
             book.isbn = isbn
-            book.author = author
-            book.publisher = publisher
-            book.edition = edition
-            book.year = year!
-            book.genre = genre
-            book.desc = desc
+            book.author = author ?? ""
+            book.publisher = publisher ?? ""
+            book.edition = edition ?? ""
+            book.year = year ?? 0
+            book.genre = genre ?? ""
+            book.desc = desc ?? ""
             
             bookList.append(book)
             
@@ -79,16 +77,22 @@ class AddBookViewController: UIViewController {
             
             // Setup an alert to show sucessful save details about the Book
             // UIAlertController manages an alert instance
-            let alertController = UIAlertController(title: "Save", message: messageString, preferredStyle:
-                UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Saved", message: "Book had created.", preferredStyle:UIAlertControllerStyle.alert)
             
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler:
+            alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler:
                 nil))
             
             self.present(alertController, animated: true, completion: nil)
             
             
             // To do: After click on save should back to Main Page.
+        }else{
+            let alertController = UIAlertController(title: "Ooops!", message: "Book name and ISBN cannot be empty.", preferredStyle:UIAlertControllerStyle.alert)
+            
+            alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler:
+                nil))
+            
+            self.present(alertController, animated: true, completion: nil)
         }
     }
     
