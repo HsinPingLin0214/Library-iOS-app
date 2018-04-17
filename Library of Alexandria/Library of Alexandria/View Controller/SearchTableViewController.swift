@@ -49,8 +49,15 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search book name"
+        searchController.searchBar.searchBarStyle = .minimal
         navigationItem.searchController = searchController
         //To do: Show search bar at first
+        //tableView.tableHeaderView = searchController.searchBar
+        definesPresentationContext = true
+
+        
+        
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -207,19 +214,16 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
 
         let cell = tableView.dequeueReusableCell(withIdentifier: cellResuseIdentifier, for: indexPath)
         
-
         // Configure the cell...
         if indexPath.section == SECTION_BOOKS {
             let bookCell = cell as? BookTableViewCell
             // Fixed: the search result should use filteredList
             bookCell?.nameLabel.text = filteredList[indexPath.row].name
             bookCell?.authorLabel.text = filteredList[indexPath.row].author
-            
         }
         else {
             cell.textLabel?.text = "\(filteredList.count) records"
         }
-        
         return cell
     }
     
@@ -233,7 +237,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         // Pass the selected object to the new view controller.
         if segue.identifier == "viewBookFromListSegue" {
             let bookDetailsController: BookDetailsViewController = segue.destination as! BookDetailsViewController
-            bookDetailsController.currentISBN = bookList[(tableView.indexPathForSelectedRow?.row)!].isbn
+            bookDetailsController.currentISBN = filteredList[(tableView.indexPathForSelectedRow?.row)!].isbn
             //To do: Click on filterList's item, next view page's navigation bar will missing
         }
     }
