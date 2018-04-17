@@ -50,6 +50,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search book name"
         navigationItem.searchController = searchController
+        //To do: Show search bar at first
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -233,6 +234,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         if segue.identifier == "viewBookFromListSegue" {
             let bookDetailsController: BookDetailsViewController = segue.destination as! BookDetailsViewController
             bookDetailsController.currentISBN = bookList[(tableView.indexPathForSelectedRow?.row)!].isbn
+            //To do: Click on filterList's item, next view page's navigation bar will missing
         }
     }
 
