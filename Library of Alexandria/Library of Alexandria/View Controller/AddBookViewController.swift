@@ -139,6 +139,13 @@ class AddBookViewController: UIViewController {
         catch {
             fatalError("Failed to fetch books: \(error)")
         }
+        
+        let alertController = UIAlertController(title: "Updated", message: "Book had updated.", preferredStyle:UIAlertControllerStyle.alert)
+        
+        alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler:
+            nil))
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
